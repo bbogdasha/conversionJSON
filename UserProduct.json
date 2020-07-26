@@ -1,0 +1,35 @@
+{
+  "product": "Live JSON generator",
+  "version": 3.1,
+  "releaseDate": "2014-06-25T00:00:00.000Z",
+  "demo": true,
+  "person": {
+    "id": 1,
+    "firstname": "John",
+    "surname": "Doe",
+    "phones": {
+      "home": "800-123-4567",
+      "mobile": "877-123-1234"
+    },
+    "email": [
+      "jd@example.com",
+      "jd@example.org"
+    ],
+    "dateOfBirth": "1980-01-02T00:00:00.000Z",
+    "registered": true,
+    "emergencyContacts": [
+      {
+        "firstname": "Jane",
+        "surname": "Doe",
+        "phone": "888-555-1212",
+        "relationship": "spouse"
+      },
+      {
+        "firstname": "Justin",
+        "surname": "Doe",
+        "phone": "877-123-1212",
+        "relationship": "parent"
+      }
+    ]
+  }
+}
