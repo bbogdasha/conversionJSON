@@ -4,6 +4,7 @@ The program converts the JSON format to Java objects from [UserProduct.json](htt
 
 ### Tech
 
+* JSON;
 * Jackson.
 
 ### Result
