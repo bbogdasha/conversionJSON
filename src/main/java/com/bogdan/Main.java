@@ -1,27 +1,35 @@
 package com.bogdan;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
-    private static final String filePath = "UserProduct.json";
-
     public static void main(String[] args) {
 
-        ObjectMapper mapper = new ObjectMapper();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Select operation (1 or 2): \n1. JSON to Java objects. \n2. Java objects to JSON.");
+        int num = sc.nextInt();
+        System.out.println("Selected " + num + " operation.");
 
-        try {
-            Product product = mapper.readValue(new File(filePath), Product.class);
-            String prettyJSON = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(product);
-            System.out.println(prettyJSON);
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found!");
-        } catch (IOException e) {
-            e.printStackTrace();
+        switch (num){
+            case 1:
+                Converter.JSONToObjects();
+                break;
+            case 2:
+                List<Notebook> notebook = new ArrayList<>();
+                String[] phoneOne = {"+46374673674", "+23525367423"};
+                String[] phoneTwo = {"+15738302434", "+9738727642", "+8278273822"};
+                notebook.add(new Notebook("Bob", "Shone", "1996-03-27", phoneOne));
+                notebook.add(new Notebook("Merry", "Collins", "1987-11-12", phoneTwo));
+                notebook.add(new Notebook("William", "Walles", "1997-09-13", phoneTwo));
+                notebook.add(new Notebook("Melinda", "Morri", "1975-12-20", phoneOne));
+                Staff staff = new Staff("NewCompany", notebook);
+                Converter.objectsToJSON(staff);
+                break;
+            default:
+                System.out.println("Entered wrong operation!");
         }
     }
 }

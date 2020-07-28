@@ -1,0 +1,24 @@
+{
+  "company" : "NewCompany",
+  "staff" : [ {
+    "firstname" : "Bob",
+    "surname" : "Shone",
+    "dateOfBirth" : "1996-03-27",
+    "phone" : [ "+46374673674", "+23525367423" ]
+  }, {
+    "firstname" : "Merry",
+    "surname" : "Collins",
+    "dateOfBirth" : "1987-11-12",
+    "phone" : [ "+15738302434", "+9738727642", "+8278273822" ]
+  }, {
+    "firstname" : "William",
+    "surname" : "Walles",
+    "dateOfBirth" : "1997-09-13",
+    "phone" : [ "+15738302434", "+9738727642", "+8278273822" ]
+  }, {
+    "firstname" : "Melinda",
+    "surname" : "Morri",
+    "dateOfBirth" : "1975-12-20",
+    "phone" : [ "+46374673674", "+23525367423" ]
+  } ]
+}
