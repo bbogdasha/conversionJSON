@@ -10,8 +10,8 @@ import java.io.IOException;
 
 public class Converter {
 
-    private static final String filePathOne = "Json to objects.json";
-    private static final String filePathTwo = "Objects to json.json";
+    private static final String filePathOne = "JsonDeserialization.json";
+    private static final String filePathTwo = "JsonSerialization.json";
     private static final ObjectMapper mapper = new ObjectMapper();
     private static final ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
 

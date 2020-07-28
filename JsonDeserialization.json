@@ -29,6 +29,24 @@
         "surname": "Doe",
         "phone": "877-123-1212",
         "relationship": "parent"
+      },
+	  {
+        "firstname": "Bob",
+        "surname": "Doe",
+        "phone": "865-24-4525",
+        "relationship": "brather"
+      },
+	  {
+        "firstname": "Ciri",
+        "surname": "Oracle",
+        "phone": "366-421-2332",
+        "relationship": "sister"
+      },
+	  {
+        "firstname": "Oliver",
+        "surname": "Dido",
+        "phone": "333-444-222",
+        "relationship": "friend"
       }
     ]
   }
