@@ -27,7 +27,7 @@ Staff staff = new Staff("NewCompany", notebook);
 ```
 to JSON format in file [Objects to json.json](https://github.com/bbogdasha/conversionJSON/blob/master/Objects%20to%20json.json).
 
-```
+```java
 {
   "company" : "NewCompany",
   "staff" : [ {
