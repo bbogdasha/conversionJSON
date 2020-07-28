@@ -1,6 +1,6 @@
 # Conversion JSON to Java objects
 
-The program converts the JSON format to Java objects from [Json to objects.json](https://github.com/bbogdasha/conversionJSON/blob/master/Json%20to%20objects.json) and vice versa - Java objects to JSON in file [Objects to json.json](https://github.com/bbogdasha/conversionJSON/blob/master/Objects%20to%20json.json).
+The program converts the JSON format to Java objects from [Json to objects](https://github.com/bbogdasha/conversionJSON/blob/master/Json%20to%20objects.json) and vice versa - Java objects to JSON format in file [Objects to json](https://github.com/bbogdasha/conversionJSON/blob/master/Objects%20to%20json.json).
 
 ### Tech
 
@@ -9,11 +9,11 @@ The program converts the JSON format to Java objects from [Json to objects.json]
 
 ### Result
 
-**1.** First operation in console dispay:
+**1.** First operation converts JSON format to Java objects and display in console:
 
 ![Screenshot](https://github.com/bbogdasha/conversionJSON/blob/master/screenshots/Screenshot_1.jpg)
 
-**2.** Second operation converts this objects:
+**2.** Second operation converts this Java objects:
 
 ```
 List<Notebook> notebook = new ArrayList<>();
