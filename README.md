@@ -1,6 +1,6 @@
-# Conversion JSON to Java objects
+# Conversion JSON Deserialization and Serialization
 
-The program converts the JSON format to Java objects from [JsonDeserialization](https://github.com/bbogdasha/conversionJSON/blob/master/Json%20to%20objects.json) and vice versa - Java objects to JSON format in file [JsonSerialization](https://github.com/bbogdasha/conversionJSON/blob/master/Objects%20to%20json.json).
+The program converts the JSON format to Java objects from [JsonDeserialization](https://github.com/bbogdasha/conversionJSON/blob/master/JsonDeserialization.json) and vice versa - Java objects to JSON format in file [JsonSerialization](https://github.com/bbogdasha/conversionJSON/blob/master/JsonSerialization.json).
 
 ### Tech
 
@@ -15,7 +15,7 @@ The program converts the JSON format to Java objects from [JsonDeserialization](
 
 **2.** Second operation converts this Java objects:
 
-```
+```java
 List<Notebook> notebook = new ArrayList<>();
 String[] phoneOne = {"+46374673674", "+23525367423"};
 String[] phoneTwo = {"+15738302434", "+9738727642", "+8278273822"};
@@ -25,9 +25,9 @@ notebook.add(new Notebook("William", "Walles", "1997-09-13", phoneTwo));
 notebook.add(new Notebook("Melinda", "Morri", "1975-12-20", phoneOne));
 Staff staff = new Staff("NewCompany", notebook);
 ```
-to JSON format in file [Objects to json.json](https://github.com/bbogdasha/conversionJSON/blob/master/Objects%20to%20json.json).
+to JSON format in file [JsonSerialization](https://github.com/bbogdasha/conversionJSON/blob/master/JsonSerialization.json). Result:
 
-```java
+```json
 {
   "company" : "NewCompany",
   "staff" : [ {
